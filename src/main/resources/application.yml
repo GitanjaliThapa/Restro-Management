@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: restro-management
+
+  config:
+    import:
+      - optional:application-database.yml
+      - optional:application-jwt.yml
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework.security: DEBUG
+    com.gitanjali.restromanagement: DEBUG
